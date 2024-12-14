@@ -1,0 +1,29 @@
+@import "reset";
+@import "variables";
+@import "placeholders";
+@import "mixins";
+
+header{
+    background-color: #49332e;
+    @include w-h(100%, 70px);
+    @include go-flex(row, wrap, space-between);
+    p{
+        color: black;
+        font-size: 25px;
+        font-weight: 700;
+        display: inline;
+    }
+    img{
+        @include w-h(70px, 70px);
+    }}
+    nav{
+        @include go-flex(row, wrap, space-around);
+        @include w-h(50%, 70px);
+    a{
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+
