@@ -9,7 +9,7 @@ header{
     @include go-flex(row, wrap, space-between);
     p{
         color: black;
-        font-size: 25px;
+        font-size: $lg-font-size;
         font-weight: 700;
         display: inline;
     }
@@ -21,7 +21,7 @@ header{
         @include w-h(50%, 70px);
     a{
         color: white;
-        font-size: 25px;
+        font-size: $lg-font-size;
         font-weight: 700;
     }
 }
