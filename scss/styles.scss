@@ -27,3 +27,30 @@ header{
 }
 }
 
+main{
+    @include w-h(100%, 400px);
+    background-color: #af948e;
+    @include go-flex(column, nowrap, flex-start, flex-start);
+    h1{
+        color: black;
+        font-size: $lg-font-size;
+        font-weight: 900;
+        margin: 50px 20px;
+    }
+    a{
+        color: black;
+        font-size: $md-font-size;
+        font-weight: 500;
+        margin: 53px 20px;
+    }
+    .book{
+        @include w-h(150px, 250px);
+        @include go-flex(column, wrap);
+    }
+    .cover{
+        background-image: url(https://apiv1.biblusi.ge/storage/book/yZ7M4N9IsnCUtjkX82LZDiCAMzgiQtowksKFG3BC.jpg);
+        @include w-h(100px, 150px);
+        background-size: cover;
+    }
+}
+
