@@ -15,7 +15,7 @@ header{
     }
     img{
         @include w-h(70px, 70px);
-    }}
+    }
     nav{
         @include go-flex(row, wrap, space-around);
         @include w-h(50%, 70px);
@@ -25,5 +25,5 @@ header{
         font-weight: 700;
     }
 }
-
+}
 
