@@ -212,4 +212,27 @@ main .cover {
   width: 100px;
   height: 150px;
   background-size: cover;
+}
+
+section {
+  width: 50%;
+  height: 400px;
+  background-color: #af948e;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+section h1 {
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 50px 20px;
+}
+section a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 53px 20px;
 }/*# sourceMappingURL=styles.css.map */

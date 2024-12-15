@@ -54,3 +54,22 @@ main{
     }
 }
 
+section{
+    @include w-h(50%, 400px);
+    background-color: #af948e;
+    @include go-flex(column, nowrap, flex-start, flex-start);
+    h1{
+        color: black;
+        font-size: $lg-font-size;
+        font-weight: 900;
+        margin: 50px 20px;
+    }
+    a{
+        color: black;
+        font-size: $md-font-size;
+        font-weight: 500;
+        margin: 53px 20px;
+    }
+}
+
+
