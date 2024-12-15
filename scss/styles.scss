@@ -54,10 +54,16 @@ main{
     }
 }
 
+.container{
+    @include go-flex(row, nowrap, flex-start, flex-start); 
+}
+aside,
 section{
     @include w-h(50%, 400px);
     background-color: #af948e;
     @include go-flex(column, nowrap, flex-start, flex-start);
+    border-width: 2px;
+    border-color: #49332e;
     h1{
         color: black;
         font-size: $lg-font-size;
@@ -71,5 +77,4 @@ section{
         margin: 53px 20px;
     }
 }
-
 

@@ -214,6 +214,15 @@ main .cover {
   background-size: cover;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+aside,
 section {
   width: 50%;
   height: 400px;
@@ -223,13 +232,17 @@ section {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  border-width: 2px;
+  border-color: #49332e;
 }
+aside h1,
 section h1 {
   color: black;
   font-size: 25px;
   font-weight: 900;
   margin: 50px 20px;
 }
+aside a,
 section a {
   color: black;
   font-size: 20px;
