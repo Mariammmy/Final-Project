@@ -46,14 +46,22 @@ main{
         font-weight: 500;
         margin: 53px 20px;
     }
+    .books{
+        @include go-flex(row, wrap, space-between, space-between);
+        width:100%;
+        margin-left: 50px;
+    }
     .book{
-        @include w-h(150px, 250px);
+        @include w-h(180px, 280px);
         @include go-flex(column, wrap);
+        margin: 10px;
+        gap: 8px;
     }
     .cover{
-        background-image: url(https://apiv1.biblusi.ge/storage/book/yZ7M4N9IsnCUtjkX82LZDiCAMzgiQtowksKFG3BC.jpg);
-        @include w-h(100px, 150px);
+        @include w-h(150px, 224px);
         background-size: cover;
+        border-style: solid;
+        border-radius: 10px;
     }
 }
 

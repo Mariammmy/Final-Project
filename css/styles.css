@@ -201,20 +201,32 @@ main a {
   font-weight: 500;
   margin: 53px 20px;
 }
+main .books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  margin-left: 50px;
+}
 main .book {
-  width: 150px;
-  height: 250px;
+  width: 180px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 10px;
+  gap: 8px;
 }
 main .cover {
-  background-image: url(https://apiv1.biblusi.ge/storage/book/yZ7M4N9IsnCUtjkX82LZDiCAMzgiQtowksKFG3BC.jpg);
-  width: 100px;
-  height: 150px;
+  width: 150px;
+  height: 224px;
   background-size: cover;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 .container {
