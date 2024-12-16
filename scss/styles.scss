@@ -79,5 +79,23 @@ section{
 
 aside,
 article{
-    @include w-h(50%, 400px) !important;
+    @include w-h(50%, 400px);
+}
+
+
+.footer{
+    @include w-h(100%, 200px);
+     background-color: black;
+     @include go-flex(row, wrap, space-around);
+     div{
+        @include go-flex(column, wrap);
+        gap: 15px;
+        padding: 10px;
+        h3{
+            color: aliceblue;
+        }
+        p{
+            color: #af948e;
+        }
+     }
 }
