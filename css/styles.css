@@ -175,6 +175,9 @@ header nav a {
   font-size: 25px;
   font-weight: 700;
 }
+header nav .active {
+  color: #f9d794;
+}
 
 main {
   width: 100%;
