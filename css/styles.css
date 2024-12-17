@@ -181,7 +181,7 @@ header nav .active {
 
 main {
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: #af948e;
   display: flex;
   flex-direction: column;
@@ -209,6 +209,9 @@ main .books {
   align-items: space-between;
   width: 100%;
   margin-left: 50px;
+}
+main .page {
+  width: 70%;
 }
 main .book {
   width: 180px;

@@ -31,7 +31,7 @@ header{
 }
 
 main{
-    @include w-h(100%, 400px);
+    @include w-h(100%, auto);
     background-color: #af948e;
     @include go-flex(column, nowrap, flex-start, flex-start);
     h1{
@@ -50,6 +50,9 @@ main{
         @include go-flex(row, wrap, space-between, space-between);
         width:100%;
         margin-left: 50px;
+    }
+    .page{
+        width: 70%;
     }
     .book{
         @include w-h(180px, 280px);
