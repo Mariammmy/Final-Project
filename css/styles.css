@@ -201,11 +201,6 @@ main a {
   font-weight: 500;
   margin: 53px 20px;
 }
-main .headline {
-  display: inline-flex;
-  width: 100%;
-  flex-wrap: wrap;
-}
 main .books {
   display: flex;
   flex-direction: row;

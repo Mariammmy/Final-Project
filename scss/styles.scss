@@ -46,11 +46,6 @@ main{
         font-weight: 500;
         margin: 53px 20px;
     }
-    .headline{
-        display: inline-flex;
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .books{
         @include go-flex(row, wrap, space-between, space-between);
         width:100%;
