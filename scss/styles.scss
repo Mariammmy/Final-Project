@@ -55,7 +55,7 @@ main{
         width: 70%;
     }
     .book{
-        @include w-h(180px, 280px);
+        @include w-h(200px, 300px);
         @include go-flex(column, wrap);
         margin: 10px;
         gap: 8px;

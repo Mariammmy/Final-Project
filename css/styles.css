@@ -214,8 +214,8 @@ main .page {
   width: 70%;
 }
 main .book {
-  width: 180px;
-  height: 280px;
+  width: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
