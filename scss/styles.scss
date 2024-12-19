@@ -7,6 +7,7 @@ header{
     background-color: #49332e;
     @include w-h(100%, 70px);
     @include go-flex(row, wrap, space-between);
+    position: fixed;
     p{
         color: black;
         font-size: $lg-font-size;
@@ -18,7 +19,7 @@ header{
     }
     nav{
         @include go-flex(row, wrap, space-around);
-        @include w-h(50%, 70px);
+        @include w-h(60%, 70px);
     a{
         color: white;
         font-size: $lg-font-size;
@@ -46,20 +47,16 @@ main{
         font-weight: 500;
         margin: 53px 20px;
     }
-    .books{
-        @include go-flex(row, wrap, space-between, space-between);
-        width:100%;
-        margin-left: 50px;
-    }
-    .page{
-        width: 70%;
-    }
     .book{
         @include w-h(200px, 300px);
         @include go-flex(column, wrap);
         margin: 10px;
         gap: 8px;
     }
+    .page{
+        width: 70%;
+    }
+    
     .cover{
         @include w-h(150px, 224px);
         background-size: cover;
@@ -70,6 +67,11 @@ main{
 
 .container{
     @include go-flex(row, nowrap, flex-start, flex-start); 
+}
+.books{
+    @include go-flex(row, wrap, space-between, space-between);
+    width:100%;
+    padding-left: 50px;
 }
 aside,
 article,

@@ -150,6 +150,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 header p {
   color: black;
@@ -167,7 +168,7 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 60%;
   height: 70px;
 }
 header nav a {
@@ -201,18 +202,6 @@ main a {
   font-weight: 500;
   margin: 53px 20px;
 }
-main .books {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: space-between;
-  width: 100%;
-  margin-left: 50px;
-}
-main .page {
-  width: 70%;
-}
 main .book {
   width: 200px;
   height: 300px;
@@ -223,6 +212,9 @@ main .book {
   align-items: center;
   margin: 10px;
   gap: 8px;
+}
+main .page {
+  width: 70%;
 }
 main .cover {
   width: 150px;
@@ -238,6 +230,16 @@ main .cover {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  padding-left: 50px;
 }
 
 aside,
