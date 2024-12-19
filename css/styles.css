@@ -236,10 +236,31 @@ main .cover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: space-between;
   width: 100%;
   padding-left: 50px;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: space-between;
+  width: 100%;
+  padding-left: 50px;
+  gap: 50px;
+}
+.blogs h2 {
+  font-size: 25px;
+  padding: 10px;
+}
+.blogs img {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 15px;
 }
 
 aside,

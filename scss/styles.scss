@@ -69,9 +69,25 @@ main{
     @include go-flex(row, nowrap, flex-start, flex-start); 
 }
 .books{
-    @include go-flex(row, wrap, space-between, space-between);
+    @include go-flex(row, wrap, space-around, space-between);
     width:100%;
     padding-left: 50px;
+}
+.blogs{
+    @include go-flex(row, wrap, flex-start, space-between);
+    width:100%;
+    padding-left: 50px;
+    gap: 50px;
+    h2{
+       font-size: $lg-font-size;
+       padding: 10px; 
+    }
+    img{
+        width: 200px; 
+        height: 200px;
+        border-style: solid;
+        border-radius: 15px;
+    }
 }
 aside,
 article,
