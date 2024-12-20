@@ -225,12 +225,14 @@ main .cover {
   border-radius: 10px;
 }
 
-.container {
+.box {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .books {

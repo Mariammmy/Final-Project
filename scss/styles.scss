@@ -66,8 +66,10 @@ main{
     }
 }
 
-.container{
+.box{
     @include go-flex(row, nowrap, flex-start, flex-start); 
+    box-sizing: border-box;
+    width: 100%;
 }
 .books{
     @include go-flex(row, wrap, space-around, space-between);
@@ -145,3 +147,5 @@ article{
     height: 100%; 
     object-fit: cover;
 }
+
+
