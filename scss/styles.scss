@@ -53,6 +53,7 @@ main{
         @include go-flex(column, wrap);
         margin: 10px;
         gap: 8px;
+        @include hover-grow;
     }
     .page{
         width: 70%;
