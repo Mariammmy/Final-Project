@@ -345,20 +345,26 @@ article {
   object-fit: cover;
 }
 
-.circle {
+.contact {
+  width: 300px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact div {
   width: 68px;
   height: 68px;
   border-radius: 50px;
   background-color: #5863E3;
-  position: relative;
-  margin-left: 20px;
   display: inline-block;
 }
-
-.contact {
-  width: 180px;
-  display: inline-block;
-  margin-left: 290px;
-  margin-top: 51px;
-  justify-content: center;
+.contact h1 {
+  margin: 0;
+}
+.contact p {
+  color: #424040;
 }/*# sourceMappingURL=styles.css.map */
