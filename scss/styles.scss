@@ -45,8 +45,15 @@ main{
     a{
         color: black;
         font-size: $md-font-size;
-        font-weight: 500;
-        margin: 53px 20px;
+        font-weight: 500; 
+    }
+    nav{
+        a{
+            color: black;
+            font-size: $md-font-size;
+            font-weight: 500;
+            margin: 53px 20px;
+        }
     }
     .book{
         @include w-h(200px, 300px);
@@ -111,6 +118,13 @@ section{
         font-weight: 500;
         margin: 53px 20px;
     }
+    h5{
+        font-size:  $sm-font-size;
+        color:#000000a4;
+        padding-top: 10px;
+        @include w-h(70%, auto);
+        padding-left: 50px;
+    }
 }
 
 aside,
@@ -153,7 +167,6 @@ article{
 
 .contact{
     width: 300px;
-    display: flex;
     @include go-flex(column);
     gap: 20px;
     div {
@@ -170,3 +183,76 @@ article{
     }
 }
 
+.aboutus{
+    @include go-flex(row, nowrap, space-between);
+    gap: 20px;
+    div{
+       @include go-flex(flex-start, wrap, flex-start); 
+       @include w-h(600px, 300px);
+    }
+}
+
+.headline{
+    display: inline-flex ; 
+    flex-wrap: wrap;
+    a{
+            color: black;
+            font-size: $md-font-size;
+            font-weight: 500;
+            margin: 53px 20px;
+        }
+}
+
+.pages{
+    @include go-flex();
+    gap:20px;
+    padding: 20px;
+    .right{
+        @include go-flex();
+        @include go-flex(column, wrap);
+        margin: 10px;
+        gap: 8px;
+        @include hover-grow;}
+    .coverr{
+        @include w-h(300px, 450px);
+        background-size: cover;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    .description{
+        @include go-flex(column, wrap, flex-start, flex-start);
+        @include w-h(40%, auto);
+        justify-content: flex-start;
+        gap: 10px;
+        h1{
+            font-size: $lg-font-size; 
+            font-weight: 900;
+            margin: 5px;
+        }
+        h2{
+            font-size: $md-font-size; 
+            font-weight: 800;
+        }
+        p{
+            font-size:  $sm-font-size;
+            color:#0000007d;
+            padding-top: 10px;
+        }
+    }
+    .left{
+        @include go-flex();
+        @include go-flex(column, wrap, flex-start, flex-start);
+        margin: 10px;
+        gap: 8px;
+        h2{
+            font-size: $md-font-size; 
+            font-weight: 800;
+            color: #241e4d;
+        }
+        a{
+            font-size:  $sm-font-size;
+            color: rgb(4, 62, 81)
+        }
+    }
+    
+}

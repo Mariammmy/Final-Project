@@ -201,6 +201,11 @@ main a {
   color: black;
   font-size: 20px;
   font-weight: 500;
+}
+main nav a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
   margin: 53px 20px;
 }
 main .book {
@@ -298,6 +303,16 @@ section a {
   font-weight: 500;
   margin: 53px 20px;
 }
+aside h5,
+article h5,
+section h5 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6431372549);
+  padding-top: 10px;
+  width: 70%;
+  height: auto;
+  padding-left: 50px;
+}
 
 aside,
 article {
@@ -348,7 +363,6 @@ article {
 .contact {
   width: 300px;
   display: flex;
-  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
@@ -367,4 +381,116 @@ article {
 }
 .contact p {
   color: #424040;
+}
+
+.aboutus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.aboutus div {
+  display: flex;
+  flex-direction: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+}
+
+.headline {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.headline a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 53px 20px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.pages .right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.pages .right:hover {
+  transform: scale(1.1);
+}
+.pages .coverr {
+  width: 300px;
+  height: 450px;
+  background-size: cover;
+  border-style: solid;
+  border-radius: 10px;
+}
+.pages .description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+  height: auto;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.pages .description h1 {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 5px;
+}
+.pages .description h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.pages .description p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4901960784);
+  padding-top: 10px;
+}
+.pages .left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+  gap: 8px;
+}
+.pages .left h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #241e4d;
+}
+.pages .left a {
+  font-size: 18px;
+  color: rgb(4, 62, 81);
 }/*# sourceMappingURL=styles.css.map */
