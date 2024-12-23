@@ -186,6 +186,7 @@ article{
 .aboutus{
     @include go-flex(row, nowrap, space-between);
     gap: 20px;
+    align-self: center;
     div{
        @include go-flex(flex-start, wrap, flex-start); 
        @include w-h(600px, 300px);
@@ -255,4 +256,23 @@ article{
         }
     }
     
+}
+
+.shops{
+    @include go-flex(row, wrap, flex-start, flex-start);
+    gap: 40px;
+    margin-left: 50px;
+    img {
+        @include w-h (200px, 200px);
+        border-style: solid;
+        border-radius: 50px;
+    }
+    a{
+        font-size: $lg-font-size;
+        font-weight: 700;
+    }
+    div{
+        @include go-flex(column, wrap, flex-start, flex-start);
+        gap: 15px;
+    }
 }

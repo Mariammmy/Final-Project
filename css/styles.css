@@ -390,6 +390,7 @@ article {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  align-self: center;
 }
 .aboutus div {
   display: flex;
@@ -493,4 +494,32 @@ article {
 .pages .left a {
   font-size: 18px;
   color: rgb(4, 62, 81);
+}
+
+.shops {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 50px;
+}
+.shops img {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 50px;
+}
+.shops a {
+  font-size: 25px;
+  font-weight: 700;
+}
+.shops div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
 }/*# sourceMappingURL=styles.css.map */
