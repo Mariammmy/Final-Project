@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-glaho-bold/css/bpg-glaho-bold.min.css");
 html,
 body,
 div,
@@ -267,12 +269,16 @@ main .cover {
 .blogs h2 {
   font-size: 25px;
   padding: 10px;
+  font-family: "BPG Glaho Bold", sans-serif;
 }
 .blogs img {
   width: 200px;
   height: 200px;
   border-style: solid;
   border-radius: 15px;
+}
+.blogs p {
+  font-family: "ALK Life", sans-serif;
 }
 
 aside,
@@ -318,11 +324,16 @@ aside,
 article {
   width: 50%;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: auto;
   background-color: black;
   display: flex;
   flex-direction: row;

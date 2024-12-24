@@ -2,6 +2,9 @@
 @import "variables";
 @import "placeholders";
 @import "mixins";
+@import url("//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-glaho-bold/css/bpg-glaho-bold.min.css");
+
 
 header{
     background-color: #49332e;
@@ -92,12 +95,17 @@ main{
     h2{
        font-size: $lg-font-size;
        padding: 10px; 
+       font-family: "BPG Glaho Bold", sans-serif;
+
     }
     img{
         width: 200px; 
         height: 200px;
         border-style: solid;
         border-radius: 15px;
+    }
+    p{
+        font-family: "ALK Life", sans-serif;
     }
 }
 aside,
@@ -130,11 +138,12 @@ section{
 aside,
 article{
     @include w-h(50%, 400px);
+    @include go-flex(column, wrap, flex-start, flex-start);
 }
 
 
 .footer{
-    @include w-h(100%, 200px);
+    @include w-h(100%, auto);
      background-color: black;
      @include go-flex(row, wrap, space-around);
      div{
