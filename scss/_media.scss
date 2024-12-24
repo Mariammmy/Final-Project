@@ -14,8 +14,12 @@
 }
 
 @media (max-width: 1024px) {
-    
-    
+    .pages{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1200px) {
