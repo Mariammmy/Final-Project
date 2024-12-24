@@ -1,0 +1,31 @@
+@media (max-width: 480px) {
+    
+}
+
+@media (max-width: 768px) {
+    header{
+        nav{
+            display: none;
+        }
+    }
+    @include w-h(100%, auto);
+    @include go-flex(column, nowrap, flex-start, flex-start);
+
+}
+
+@media (max-width: 1024px) {
+    
+    
+}
+
+@media (max-width: 1200px) {
+    .box{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    aside,
+    article{
+        @include w-h(100%, 400px);
+    } 
+}
