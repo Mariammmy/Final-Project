@@ -267,6 +267,7 @@ article{
     
 }
 
+
 .shops{
     @include go-flex(row, wrap, flex-start, flex-start);
     gap: 40px;
@@ -285,5 +286,7 @@ article{
         gap: 15px;
     }
 }
+
+
 
 @import "media";
