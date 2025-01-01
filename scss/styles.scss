@@ -286,9 +286,48 @@ article{
         gap: 15px;
     }
 }
+form{
+    align-self: center;
+    margin-top: 50px;
+    @include go-flex(row, wrap, space-around, space-around);
+    width: 1000px;
+    gap:10px;
+    label{
+        color: #000000;
+        margin: 10px;
+    }
+}
+.form {
+    @include go-flex(column, wrap);
+    flex-wrap: wrap;
+}
 
-
-
-
+input[type=submit] {
+    @include w-h(400px, 59px);
+    background-color: #5968F4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  input[type=text1]{
+    width: 400px;
+    height: 40px;
+    border-color: #fafafa74;
+    background-color: #ffffff65;
+    border: 2px solid;
+    margin-left: 10px;
+}
+input[type=text]{
+    width: 400px;
+    height: 90px;
+    border-color: #fafafa74;
+    background-color: #ffffff65;
+    border: 2px solid;
+    margin-left: 10px;
+}
 
 @import "media";
