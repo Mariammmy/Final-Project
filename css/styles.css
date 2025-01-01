@@ -533,25 +533,4 @@ article {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 15px;
-}
-
-@media (max-width: 768px) {
-  header nav {
-    display: none;
-  }
-}
-@media (max-width: 1200px) {
-  .box {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  aside,
-  article {
-    width: 100%;
-    height: 400px;
-  }
-  
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

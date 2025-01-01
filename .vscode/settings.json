@@ -1,9 +1,19 @@
-{ 
+{ "files.autoSave": "afterDelay", 
+"liveSassCompile.settings.autoprefix": [
+
+ ], 
+"liveSassCompile.settings.forceBaseDirectory": "", 
+"liveSassCompile.settings.useNewCompiler": true, 
 "liveSassCompile.settings.formats": [
+    
     
  
     { "format": "expanded", 
     "extensionName": ".css", 
     "savePath": "~/../css" } 
-]
+],
+
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "workbench.colorTheme": "SpaceBox Pro",
+    "liveSassCompile.settings.compileOnWatch": true,
 }
