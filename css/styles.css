@@ -211,8 +211,9 @@ main nav a {
   margin: 53px 20px;
 }
 main .book {
-  width: 200px;
+  width: auto;
   height: 300px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -254,6 +255,10 @@ main .cover {
   align-items: space-between;
   width: 100%;
   padding-left: 50px;
+}
+.books a, .books p {
+  font-size: 18px;
+  color: #000000;
 }
 
 .blogs {
@@ -432,6 +437,7 @@ article {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  user-select: text;
 }
 .pages .right {
   display: flex;
@@ -517,8 +523,8 @@ article {
   margin-left: 50px;
 }
 .shops img {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   border-style: solid;
   border-radius: 50px;
 }
