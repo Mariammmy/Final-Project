@@ -182,6 +182,10 @@ header nav a {
 header nav .active {
   color: #f9d794;
 }
+header nav a.active::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(124, 93, 93);
+}
 
 main {
   width: 100%;
@@ -284,6 +288,10 @@ main .cover {
 }
 .blogs p {
   font-family: "ALK Life", sans-serif;
+}
+.blogs p::first-letter {
+  color: #2c0707;
+  font-size: 200%;
 }
 
 aside,

@@ -32,6 +32,10 @@ header{
     .active{
         color:#f9d794;
     }
+    a.active::selection {
+        color: rgb(0, 0, 0);
+        background: rgb(124, 93, 93);
+      }
 }
 }
 
@@ -91,7 +95,7 @@ main{
         font-size: $sm-font-size;
         color:#000000;
     }
-}
+}   
 .blogs{
     @include go-flex(row, wrap, flex-start, space-between);
     width:100%;
@@ -112,6 +116,11 @@ main{
     p{
         font-family: "ALK Life", sans-serif;
     }
+    p::first-letter {
+        color: #2c0707;
+        font-size: 200%;
+      }  
+    
 }
 aside,
 article,
