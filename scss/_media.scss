@@ -1,0 +1,41 @@
+@media (max-width: 1270px) {
+    aside,
+    article {
+        @include w-h(100%, auto);
+    }
+    .box{
+        flex-wrap: wrap;
+    }
+    main{
+        .page{
+            width: 80%;
+        }
+    }
+  }
+
+@media (max-width: 630px) {
+    aside,article{
+    .cont{
+        flex-direction: column;
+    }
+}
+    .cont{
+        flex-direction: column-reverse;
+    }
+    .aboutus{
+        flex-wrap: wrap;
+        div{
+        @include w-h(auto, auto);
+        }
+    }
+}
+@media (max-width: 1024px) { 
+    .burger-icon { 
+        display: inline-block; 
+    }
+    header{
+        nav{
+            display: none;
+        }
+    }
+}

@@ -152,9 +152,18 @@ section{
 aside,
 article{
     @include w-h(50%, 400px);
-    @include go-flex(column, wrap, flex-start, flex-start);
+    @include go-flex(column, nowrap, flex-start, flex-start);
+    .cont{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+    }
 }
-
+.cont{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
 
 .footer{
     @include w-h(100%, auto);
@@ -345,4 +354,47 @@ input[type=text]{
     margin-left: 10px;
 }
 
+.menu-toggle {
+     display: none;
+}
+.burger-icon { 
+    display: none;
+    cursor: pointer; 
+    padding: 10px;
+    .bar1, .bar2, .bar3 { 
+        width: 35px; 
+        height: 5px; 
+        background-color: #000000; 
+        margin: 6px 0; 
+        transition: 0.4s; 
+    } } 
+    .menu-toggle:checked + .burger-icon .bar1 { 
+        transform: translate(0, 11px) rotate(-45deg); 
+    } 
+    .menu-toggle:checked + .burger-icon .bar2 { 
+        opacity: 0; 
+    } 
+    .menu-toggle:checked + .burger-icon .bar3 
+    { transform: translate(0, -11px) rotate(45deg); 
+    } 
+    .menu-links { 
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 40px; 
+        right: 0; 
+        background: #ffffff; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        a { 
+            padding: 10px 15px; 
+            text-decoration: none; 
+            color: #000; &:hover { 
+                background: #f1f1f1; 
+            } 
+        } 
+    } 
+    .menu-toggle:checked ~ 
+    .menu-links { 
+        display: flex; 
+    }
 @import "media";

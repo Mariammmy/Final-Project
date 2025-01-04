@@ -23,8 +23,24 @@
               <a href="contact.html">კონტაქტი</a>
               <a href="aboutus.html">ჩვენს შესახებ</a>
           </nav>
+          <input type="checkbox" id="menuToggle" class="menu-toggle"/> 
+          <label for="menuToggle" class="burger-icon">
+              <div class="bar1"></div> 
+              <div class="bar2"></div> 
+              <div class="bar3"></div> 
+          </label> 
+            <div class="menu-links">
+              <a href="index.html">მთავარი</a> 
+              <a href="books.html">წიგნები</a>
+              <a href="news.html">სიახლეები</a>
+              <a href="contact.html">კონტაქტი</a>
+              <a href="aboutus.html">ჩვენს შესახებ</a>
+             </div> 
+            </div>
     </header>
     <main>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -178,7 +194,7 @@
             <a href="aboutus.html">იხილეთ მეტი >>></a>
         </div>
         <div class="blogs">
-        <div style="display: flex; flex-direction: row; gap:20px;">
+        <div class="cont">
             <div>
                 <img src="../img/logo.png" alt="About Us"/>
             </div>
@@ -196,7 +212,7 @@
             <a href="contact.html">იხილეთ მეტი >>></a>
         </div>
         <div class="blogs">
-          <div style="display: flex; flex-direction: row; gap:20px;">
+          <div class="cont">
               <div>
                   <img src="../img/123.png" alt="Contact us"/>
               </div>
@@ -205,6 +221,7 @@
                   <p>კითხვების, იდეებისა, ან სხვა ნებისმიერ შემთხვევაში შეგიძლიათ დაგვეკონტაქტოთ სხვადასხვა სოციალური ქსელის საშუალებით.</p>
                   <br>
                   <p>სურვილის შემთხვევაში, გადადით კონტაქტის გვერდზე და დაგვიკავშირდით.</p>
+                  <br>
                 </div>
               </div>
           </div>
@@ -245,7 +262,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+      function toggleMenu() { var menuLinks = document.getElementById('menuLinks'); menuLinks.classList.toggle('show'); }
+    </script>
 </body>
 </html>
