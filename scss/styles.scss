@@ -184,7 +184,6 @@ article{
 
 .custom-carousel { 
     width: 60%; 
-    height: 500px;
     margin: 0 auto; 
     position: relative; 
     z-index: 2;
@@ -193,6 +192,8 @@ article{
     width: 100%; 
     height: 100%; 
     object-fit: cover;
+    border-style: solid;
+    border-radius: 40px;
 }
 
 
@@ -222,6 +223,9 @@ article{
     div{
        @include go-flex(flex-start, wrap, flex-start); 
        @include w-h(600px, 300px);
+    }
+    p{
+        margin-left: 10px;
     }
 }
 
@@ -313,8 +317,7 @@ article{
 form{
     align-self: center;
     margin-top: 50px;
-    @include go-flex(row, wrap, space-around, space-around);
-    width: 1000px;
+    @include go-flex(column, wrap, space-around, space-around);
     gap:10px;
     label{
         color: #000000;
@@ -352,6 +355,12 @@ input[type=text]{
     background-color: #ffffff65;
     border: 2px solid;
     margin-left: 10px;
+}
+label[for=lname],
+label[for=fname]{
+    font-weight: 700;
+    font-size: $md-font-size;
+    display: block;
 }
 
 .menu-toggle {
