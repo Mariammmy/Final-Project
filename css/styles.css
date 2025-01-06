@@ -332,6 +332,19 @@ section h5 {
   height: auto;
   padding-left: 50px;
 }
+aside .cont,
+article .cont,
+section .cont {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+aside .cont:hover,
+article .cont:hover,
+section .cont:hover {
+  transform: scale(1.05);
+}
 
 aside,
 article {
@@ -348,12 +361,20 @@ article .cont {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+aside .cont:hover,
+article .cont:hover {
+  transform: scale(1.05);
 }
 
 .cont {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+.cont p {
+  padding-right: 10px;
 }
 
 .footer {
@@ -679,10 +700,16 @@ label[for=fname] {
 }
 
 @media (max-width: 1270px) {
+  section,
   aside,
   article {
     width: 100%;
     height: auto;
+  }
+  section p,
+  aside p,
+  article p {
+    width: 70%;
   }
   .box {
     flex-wrap: wrap;
@@ -691,8 +718,8 @@ label[for=fname] {
     width: 80%;
   }
 }
-@media (max-width: 630px) {
-  aside .cont, article .cont {
+@media (max-width: 730px) {
+  section .cont, aside .cont, article .cont {
     flex-direction: column;
   }
   .cont {
@@ -704,6 +731,13 @@ label[for=fname] {
   .aboutus div {
     width: auto;
     height: auto;
+  }
+}
+@media (max-width: 448px) {
+  input[type=submit],
+  input[type=text],
+  input[type=text1] {
+    width: 70%;
   }
 }
 @media (max-width: 1024px) {

@@ -124,7 +124,8 @@ main{
 }
 aside,
 article,
-section{
+section
+{
     @include w-h(100%, auto);
     background-color: #af948e;
     @include go-flex(column, nowrap, flex-start, flex-start);
@@ -147,7 +148,14 @@ section{
         @include w-h(70%, auto);
         padding-left: 50px;
     }
+    .cont{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        @include hover-grow1;
+    }
 }
+
 
 aside,
 article{
@@ -157,12 +165,16 @@ article{
         display: flex;
         flex-direction: row;
         gap:20px;
+        @include hover-grow1;
     }
 }
 .cont{
     display: flex;
     flex-direction: row;
     gap:20px;
+    p{
+        padding-right: 10px;
+    }
 }
 
 .footer{

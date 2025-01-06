@@ -1,7 +1,11 @@
 @media (max-width: 1270px) {
+    section,
     aside,
     article {
         @include w-h(100%, auto);
+        p {
+            width: 70%;
+        }
     }
     .box{
         flex-wrap: wrap;
@@ -13,8 +17,8 @@
     }
   }
 
-@media (max-width: 630px) {
-    aside,article{
+@media (max-width: 730px) {
+    section,aside,article{
     .cont{
         flex-direction: column;
     }
@@ -27,6 +31,14 @@
         div{
         @include w-h(auto, auto);
         }
+    }
+    
+}
+@media (max-width: 448px){
+    input[type=submit],
+    input[type=text],
+    input[type=text1]{
+        width: 70%;
     }
 }
 @media (max-width: 1024px) { 

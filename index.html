@@ -18,10 +18,10 @@
         <p>- წიგნების კუთხე -</p>
         <nav>
               <a class="active" href="">მთავარი</a>
-              <a href="books.html">წიგნები</a>
-              <a href="news.html">სიახლეები</a>
-              <a href="contact.html">კონტაქტი</a>
-              <a href="aboutus.html">ჩვენს შესახებ</a>
+              <a href="pages/books.html">წიგნები</a>
+              <a href="pages/news.html">სიახლეები</a>
+              <a href="pages/contact.html">კონტაქტი</a>
+              <a href="pages/aboutus.html">ჩვენს შესახებ</a>
           </nav>
           <input type="checkbox" id="menuToggle" class="menu-toggle"/> 
           <label for="menuToggle" class="burger-icon">
@@ -119,7 +119,7 @@
         <br>
         <div class="headline">
             <h1>პროდუქცია</h1>
-            <a href="books.html">იხილეთ მეტი >>></a>
+            <a href="pages/books.html">იხილეთ მეტი >>></a>
         </div>
         <div style="display: inline-flex;">
             <div class="books">
@@ -160,27 +160,27 @@
     </main>
     <section>
         <div style = "display: inline-flex ; flex-wrap: wrap; flex-direction: column;">
-            <div style="display: inline-flex;">
-            <h1>ბლოგები და სიახლეები</h1>
-            <a href="news.html">იხილეთ მეტი >>></a>
+            <div class="headline">
+                <h1>ბლოგები და სიახლეები</h1>
+                <a href="../pages/news.html">იხილეთ მეტი >>></a>
             </div>
         </div>
         <div class="blogs">
-            <div style="display: flex; flex-direction: row; gap:20px;">
-            <div>
-                <img src="https://isbndb.com/blog/wp-content/uploads/2024/03/book-metadata.jpg" alt="books"/>
+            <div class="cont">
+                <div>
+                    <img src="https://isbndb.com/blog/wp-content/uploads/2024/03/book-metadata.jpg" alt="books"/>
+                </div>
+                <div style="flex-wrap: wrap; max-width: 400px;">
+                    <h2>წლის ბესთსელერები</h2>
+                    <p>2024 წელი იწურება და წლის ყველაზე გაყიდვადი წიგნებიც ცნობილია. ცნობილი ამერიკული გაზეთის, New York Times, მიხედვით გთავაზობთ წლის ტოპ ხუთ წიგნს მხატვრული ლიტერატურის განყოფილებაში:</p>
+                    <p>ჯეიმს (პარსივალ ევერეტ), ქარი და სიმართლე (ბრენდონ სანდერსონი), ბოროტი (გრეგორ მაგუაიერი), ქალები (კრისტინ ჰანა), მეოთხე ფრთა (რებეკა იაროსი)</p>
+                </div>
             </div>
-            <div style="flex-wrap: wrap; width: 400px;">
-                <h2>წლის ბესთსელერები</h2>
-                <p>2024 წელი იწურება და წლის ყველაზე გაყიდვადი წიგნებიც ცნობილია. ცნობილი ამერიკული გაზეთის, New York Times, მიხედვით გთავაზობთ წლის ტოპ ხუთ წიგნს მხატვრული ლიტერატურის განყოფილებაში:</p>
-                <p>ჯეიმს (პარსივალ ევერეტ), ქარი და სიმართლე (ბრენდონ სანდერსონი), ბოროტი (გრეგორ მაგუაიერი), ქალები (კრისტინ ჰანა), მეოთხე ფრთა (რებეკა იაროსი)</p>
-            </div>
-        </div>
-            <div style="display: flex; flex-direction: row; gap:20px;">
+            <div class="cont">
               <div>
                 <img src="https://www.neh.gov/sites/default/files/styles/medium/public/2018-06/openbooks.jpg?itok=kUdGYpx_" alt="books"/>
               </div>
-                <div style="flex-wrap: wrap; width: 400px;">
+                <div style="flex-wrap: wrap; max-width: 400px;">
                     <h2>წიგნები, რომლებიც 2025 წელს ფილმებად იქცევა</h2>
                     <p>დღეისათვის ცნობილ და გაყიდვად წიგნებს 2025 წელს ეკრანებზე ვიხილავთ. წარმოგიდგენთ მათ ჩამონათვალს: მერი შელის "ფრანკენშტეინი", ტეილორ ჯენკინს რეიდის "ეველინ ჰიუგოს შვიდი ქმარი",  მეთ ჰეიგის "შუაღამის ბიბლიოთეკა",  ჯენიფერ ლინ ბარნსის "მემკვიდრეობის თამაშები", რებეკა იაროსის "მეოთხე ფრთა".</p>
                   </div>
@@ -189,9 +189,9 @@
     </section>
     <div class="box">
     <aside>
-        <div style = "display: inline-flex ; flex-wrap: wrap;">
+        <div class="headline">
             <h1>ჩვენს შესახებ</h1>
-            <a href="aboutus.html">იხილეთ მეტი >>></a>
+            <a href="../pages/aboutus.html">იხილეთ მეტი >>></a>
         </div>
         <div class="blogs">
         <div class="cont">
@@ -207,9 +207,9 @@
         </div>
     </aside>
     <article>
-        <div style = "display: inline-flex ; flex-wrap: wrap;">
+        <div class="headline">
             <h1>კონტაქტი</h1>
-            <a href="contact.html">იხილეთ მეტი >>></a>
+            <a href="../pages/contact.html">იხილეთ მეტი >>></a>
         </div>
         <div class="blogs">
           <div class="cont">
@@ -218,9 +218,9 @@
               </div>
               <div>
                   <h2>კონტაქტი</h2>
-                  <p>კითხვების, იდეებისა, ან სხვა ნებისმიერ შემთხვევაში შეგიძლიათ დაგვეკონტაქტოთ სხვადასხვა სოციალური ქსელის საშუალებით.</p>
+                  <p style="width: 70%;">კითხვების, იდეებისა, ან სხვა ნებისმიერ შემთხვევაში შეგიძლიათ დაგვეკონტაქტოთ სხვადასხვა სოციალური ქსელის საშუალებით.</p>
                   <br>
-                  <p>სურვილის შემთხვევაში, გადადით კონტაქტის გვერდზე და დაგვიკავშირდით.</p>
+                  <p style="width: 70%;">სურვილის შემთხვევაში, გადადით კონტაქტის გვერდზე და დაგვიკავშირდით.</p>
                   <br>
                 </div>
               </div>
@@ -233,16 +233,19 @@
             <div>
                 <h3>Pages</h3>
                 <a href="index.html" target="_blank">Home</a>
-                <a href="books.html" target="_blank">Books</a>
-                <a href="news.html" target="_blank">Blogs</a>
-                <a href="aboutus.html" target="_blank">About us</a>
-                <a href="contact.html" target="_blank">Contact</a>
+                <a href="../pages/books.html" target="_blank">Books</a>
+                <a href="../pages/news.html" target="_blank">Blogs</a>
+                <a href="../pages/aboutus.html" target="_blank">About us</a>
+                <a href="../pages/contact.html" target="_blank">Contact</a>
             </div>
             <div>
                 <h3>Contact Info:</h3>
                 <p>Phone number: 579 85 33 22</p>
                 <p>Email: booknook159@gmail.com</p>
             </div>
+            <a href="https://www.tbceducation.ge/" target="_blank">
+                <img style="height: 100px; width:100px;"src="img/tbc-logo.png" alt="tbc" />
+        </a>
             <div>
                 <h3>About us</h3>
                 <p>A website containing pdf books,</p>
