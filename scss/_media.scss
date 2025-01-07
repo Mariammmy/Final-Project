@@ -40,6 +40,12 @@
     input[type=text1]{
         width: 70%;
     }
+    .books{
+        padding: 0;
+    }
+    .blogs{
+        padding-left: 10px;
+    }
 }
 @media (max-width: 1024px) { 
     .burger-icon { 
@@ -49,6 +55,10 @@
         nav{
             display: none;
         }
+    }
+    .pages{
+        flex-direction: column;
+        padding: 10px;
     }
 }
 
